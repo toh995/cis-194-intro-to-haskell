@@ -12,6 +12,7 @@ hanoi3 n peg1 peg2 peg3
 
 -- Hanoi with 4 pegs
 -- Returns the moves required to go from peg1 to peg2
+-- Solution was adapted from https://en.wikipedia.org/wiki/Tower_of_Hanoi#With_four_pegs_and_beyond
 hanoi4 :: Integer -> Peg -> Peg -> Peg -> Peg -> [Move]
 hanoi4 n peg1 peg2 peg3 peg4
   | n <= 0    = []
